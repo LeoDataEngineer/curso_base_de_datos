@@ -8,6 +8,7 @@ BEGIN
   RETURN fecha + INTERVAL dias DAY;
 END//
 
+DELIMITER //  
 CREATE FUNCTION obtener_paginas()
 RETURNS INT
 DETERMINISTIC
@@ -16,6 +17,8 @@ BEGIN
   RETURN @paginas;
 END//
 
+DELIMITER ;
+  
 Esta modifica por mi version de mysql
 CREATE FUNCTION obtener_paginas()
 RETURNS INT
